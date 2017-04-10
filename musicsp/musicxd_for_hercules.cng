@@ -1,0 +1,34 @@
+* Hercules sample config file for 1-vol demo MUSIC/SP system.
+* First, start the Hercules emulator, specifying this config file.
+* Then: (1) Connect telnet client as console, port 3270 - see notes below.
+*       (2) ipl 201 (as a Hercules command).
+*       (3) Press Enter on telnet console, to complete MUSIC/SP IPL.
+*       (4) Connect tn3270 client (for MUSIC/SP sign-on), port 3270.
+* To exit Hercules: exit (as a Hercules command)
+ARCHMODE ESA/390
+CPUSERIAL 000611
+CPUMODEL 3090
+CPUVERID FD
+MAINSIZE 16
+XPNDSIZE 0
+NUMCPU 1
+NUMVEC 0
+SYSEPOCH 1900
+* Time zone: use -0400 for EDT, -0500 for EST, etc.
+TZOFFSET -0500
+CNSLPORT 3270
+* Card reader:
+00C 3505
+* Operator console, Telnet client connection (connect before IPL):
+*  For Hummingbird HostExplorer: VT220; Keybd Opt: Send Enter as CR-LF;
+*    Preferences: Local Echo; VT model options: VT 220, 8-bit.
+*  You can also use the Windows telnet client (telnet.exe).
+00F 3215
+* User terminals, tn3270 client connection:
+*  For Hummingbird HostExplorer: e.g. 3279 model 4 ExtAttr.
+*  You can also use other tn3270 clients such as QWS3270.
+0F0-0F7 3270
+* FBA-512 disk (copied exactly from Sim390 FBA volume file):
+201 3370 musicxd.vol
+
+
