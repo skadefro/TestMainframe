@@ -1,9 +1,13 @@
 
 Alternative readme.txt to get thing going in a hurry
 
-1. Install Hercules.  I used the spinhawk version from https://github.com/Open3270/spinhawk
-2. Run Hercules using the musicxd_for_hercules.cng configuration file
 
+1. Install Hercules.  I used the spinhawk version from https://github.com/Open3270/spinhawk
+
+
+2. Unzip the .VOL file ane Run Hercules using the musicxd_for_hercules.cng configuration file
+
+./unzip_volume
 hercules -f musicxd_for_hercules.cng
 
 3. Initialise the mainframe.  Follow this carefully, it's a little odd
