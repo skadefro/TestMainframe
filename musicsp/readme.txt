@@ -1,5 +1,5 @@
 
-Alternative readme.txt to get thing going in a hurry
+Alternative readme.txt to get thing going in a hurry Open3270
 
 
 1. Install Hercules.  I used the spinhawk version from https://github.com/Open3270/spinhawk
